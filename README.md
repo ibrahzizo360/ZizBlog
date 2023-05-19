@@ -1,9 +1,9 @@
 
 
 <h1 align="center" font-weight="bold">BlogWebApp</h1>
+ <br>
 
-## Live Demo 
-<a text-align="center" href = "https://blog-frontend-ysjv.onrender.com" >DEMO HERE!<a/>
+<p align="center"><a  href = "https://blog-frontend-ysjv.onrender.com" > LIVE DEMO HERE!<a/> </p>
   
  <br>
 
