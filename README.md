@@ -1,7 +1,8 @@
 
 
 <h1 align="center" font-weight="bold">BlogWebApp</h1>
-<a href="https://blog-frontend-ysjv.onrender.com/">LIVE DEMO HERE!</a> &#xa0; | &#xa0;
+<br>
+<a href="https://blog-frontend-ysjv.onrender.com/">LIVE DEMO HERE!</a> 
 
 <p align="center">
   <a href="#dart-about">About</a> &#xa0; | &#xa0; 
