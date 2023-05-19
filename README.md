@@ -6,7 +6,7 @@
 <a align="center" href = "https://blog-frontend-ysjv.onrender.com" >DEMO HERE!<a/>
   
   
-<br>
+
 <p align="center">
   <a href="#dart-about">About</a> &#xa0; | &#xa0; 
   <a href="#sparkles-features">Features</a> &#xa0; | &#xa0;
