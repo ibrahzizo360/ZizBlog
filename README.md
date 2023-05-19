@@ -27,13 +27,20 @@
 
 ## :dart: About ##
 
-Describe your project
+Welcome to My Blog Web App, a platform that allows users to create, view, and edit blog posts. This web application provides a user-friendly interface and incorporates various features to enhance the blogging experience.
+
 
 ## :sparkles: Features ##
 
-:heavy_check_mark: Feature 1;\
-:heavy_check_mark: Feature 2;\
-:heavy_check_mark: Feature 3;
+:heavy_check_mark: User Authentication: Secure user authentication is implemented using JSON Web Tokens (JWT). This ensures that only registered users can access the blog's features and perform actions such as creating and editing posts.
+1;\
+:heavy_check_mark:Create Posts: Registered users have the ability to create and publish their own blog posts. They can craft engaging content, add images, and format their posts using HTML or Markdown.
+;\
+:heavy_check_mark:View Post Content: Users can explore the blog and read the captivating articles written by fellow bloggers. The web app provides an intuitive and visually appealing layout to enhance the reading experience.
+;
+:heavy_check_mark: - Edit Own Posts: Authors have the privilege to edit their own posts. This functionality allows them to update the content, make corrections, or add additional information to their published articles.
+;
+
 
 ## :rocket: Technologies ##
 
