@@ -1,11 +1,6 @@
-<div align="center" id="top"> 
 
-  &#xa0;
 
- <a href="https://blog-frontend-ysjv.onrender.com">LIVE DEMO HERE!</a>
-</div>
-
-<h1 align="center">BlogWebApp</h1>
+<h1 align="center" font-weight="bold">BlogWebApp</h1>
 
 ## :dart: About ##
 
