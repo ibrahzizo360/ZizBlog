@@ -3,9 +3,9 @@
 <h1 align="center" font-weight="bold">BlogWebApp</h1>
 
 ## Live Demo 
-<a align="center" href = "https://blog-frontend-ysjv.onrender.com" >DEMO HERE!<a/>
+<a text-align="center" href = "https://blog-frontend-ysjv.onrender.com" >DEMO HERE!<a/>
   
-  
+ <br>
 
 <p align="center">
   <a href="#dart-about">About</a> &#xa0; | &#xa0; 
