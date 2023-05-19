@@ -3,7 +3,7 @@
 
   &#xa0;
 
- <a href="https://blog-frontend-ysjv.onrender.com">Live Demo</a>
+ <a href="https://blog-frontend-ysjv.onrender.com">Live Demo of project</a>
 </div>
 
 <h1 align="center">BlogWebApp</h1>
@@ -11,7 +11,7 @@
 
 
 
-<hr> -->
+<hr>
 
 <p align="center">
   <a href="#dart-about">About</a> &#xa0; | &#xa0; 
