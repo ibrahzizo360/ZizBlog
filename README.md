@@ -2,6 +2,19 @@
 
 <h1 align="center" font-weight="bold">BlogWebApp</h1>
 
+
+<p align="center">
+  <a href="#dart-about">About</a> &#xa0; | &#xa0; 
+  <a href="#sparkles-features">Features</a> &#xa0; | &#xa0;
+  <a href="#rocket-technologies">Technologies</a> &#xa0; | &#xa0;
+  <a href="#white_check_mark-requirements">Requirements</a> &#xa0; | &#xa0;
+  <a href="#checkered_flag-starting">Starting</a> &#xa0; | &#xa0;
+  <a href="#memo-license">License</a> &#xa0; | &#xa0;
+  <a href="https://github.com/ibrahzizo360" target="_blank">Author</a>
+</p>
+
+<br>
+
 ## :dart: About ##
 
 Welcome to My Blog Web App, a platform that allows users to create, view, and edit blog posts. This web application provides a user-friendly interface and incorporates various features to enhance the blogging experience.
@@ -15,19 +28,7 @@ Welcome to My Blog Web App, a platform that allows users to create, view, and ed
 ![ZizoBlog - Google Chrome 5_19_2023 6_10_26 PM](https://github.com/ibrahzizo360/BlogWebApp_MERN/assets/92813019/1dd02f55-d733-4630-b549-6b15e42d41c3)
 
 
-<hr>
 
-<p align="center">
-  <a href="#dart-about">About</a> &#xa0; | &#xa0; 
-  <a href="#sparkles-features">Features</a> &#xa0; | &#xa0;
-  <a href="#rocket-technologies">Technologies</a> &#xa0; | &#xa0;
-  <a href="#white_check_mark-requirements">Requirements</a> &#xa0; | &#xa0;
-  <a href="#checkered_flag-starting">Starting</a> &#xa0; | &#xa0;
-  <a href="#memo-license">License</a> &#xa0; | &#xa0;
-  <a href="https://github.com/ibrahzizo360" target="_blank">Author</a>
-</p>
-
-<br>
 
 
 
