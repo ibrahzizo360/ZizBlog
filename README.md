@@ -1,12 +1,15 @@
 <div align="center" id="top"> 
-  <img src="./.github/app.gif" alt="BlogWebApp" />
 
   &#xa0;
 
- <a href="https://blog-frontend-ysjv.onrender.com">Live Demo of project</a>
+ <a href="https://blog-frontend-ysjv.onrender.com">LIVE DEMO HERE!</a>
 </div>
 
 <h1 align="center">BlogWebApp</h1>
+
+## :dart: About ##
+
+Welcome to My Blog Web App, a platform that allows users to create, view, and edit blog posts. This web application provides a user-friendly interface and incorporates various features to enhance the blogging experience.
 
 ## UI Desktop View
 ![ZizoBlog - Google Chrome 5_19_2023 6_07_15 PM](https://github.com/ibrahzizo360/BlogWebApp_MERN/assets/92813019/0b0ec69c-12be-43fd-87a4-a4f337039fb1)
@@ -31,9 +34,7 @@
 
 <br>
 
-## :dart: About ##
 
-Welcome to My Blog Web App, a platform that allows users to create, view, and edit blog posts. This web application provides a user-friendly interface and incorporates various features to enhance the blogging experience.
 
 
 ## :sparkles: Features ##
