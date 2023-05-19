@@ -8,7 +8,13 @@
 
 <h1 align="center">BlogWebApp</h1>
 
+## UI Desktop View
+![ZizoBlog - Google Chrome 5_19_2023 6_07_15 PM](https://github.com/ibrahzizo360/BlogWebApp_MERN/assets/92813019/0b0ec69c-12be-43fd-87a4-a4f337039fb1)
 
+<hr>
+
+## UI Mobile View
+![ZizoBlog - Google Chrome 5_19_2023 6_10_26 PM](https://github.com/ibrahzizo360/BlogWebApp_MERN/assets/92813019/1dd02f55-d733-4630-b549-6b15e42d41c3)
 
 
 <hr>
