@@ -2,8 +2,8 @@
 
 <h1 align="center" font-weight="bold">BlogWebApp</h1>
 <br>
-<a href="https://blog-frontend-ysjv.onrender.com/">LIVE DEMO HERE!</a> 
-
+<a align="center" href="https://blog-frontend-ysjv.onrender.com/">LIVE DEMO HERE!</a> 
+<br>
 <p align="center">
   <a href="#dart-about">About</a> &#xa0; | &#xa0; 
   <a href="#sparkles-features">Features</a> &#xa0; | &#xa0;
