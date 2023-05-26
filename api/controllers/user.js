@@ -17,7 +17,7 @@ userRouter.post('/register', async (req,res) => {
     try{
         const UserDoc = await User.create({   
             username,
-            password:bcrypt.hashSync(password,salt),
+            password: bcrypt.hashSync(password, salt),
         })
         res.json(UserDoc);
     }
@@ -31,7 +31,7 @@ userRouter.post('/login', async (req,res) => {
     const userDoc = await User.findOne({username});
     const passOk = bcrypt.compareSync(password, userDoc.password);
     if (passOk){
-        jwt.sign({username,id:userDoc._id}, secret, {}, (err,token)=>{
+        jwt.sign({username, id : userDoc._id}, secret, {}, (err,token)=>{
             if (err) {
                 console.error(err);
                 res.status(500).json('error signing token');
