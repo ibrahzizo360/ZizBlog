@@ -1,15 +1,12 @@
-const express = require('express');
-const multer = require('multer');
+
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const fs = require('fs');
 const Post = require('../models/postModel');
-const uploadMiddleware = multer({dest: 'uploads/'});
-const postsRouter  = express.Router();
 const config = require('../config');
 const secret = config.jwtSecret;
 
-postsRouter.post('/post', uploadMiddleware.single('file'), async (req, res) => {
+const uploadPost =  async (req, res) => {
     try {
       const { originalname, path } = req.file;
       const parts = originalname.split('.');
@@ -35,23 +32,23 @@ postsRouter.post('/post', uploadMiddleware.single('file'), async (req, res) => {
       console.error('Error creating post:', err);
       res.status(500).json({ error: 'Internal Server Error' });
     }
-  });
+  };
 
  
-postsRouter.get('/post', async(req,res) =>{
+const getPosts = async(req,res) =>{
     res.json(await Post.find().populate('author', ['username'])
     .sort({createdAt: -1})
     .limit(20));
-});
+};
 
 
-postsRouter.get('/post/:id', async (req, res)=> {
+const getPostById = async (req, res)=> {
     const {id}= req.params;
     const postDoc = await Post.findById(id).populate('author', ['username']);
     res.json(postDoc);
-});
+};
 
-postsRouter.put('/post', uploadMiddleware.single('file'), async (req,res) => {
+const updatePost =  async (req,res) => {
     let newPath = null;
     if (req.file){
         const {originalname, path} = req.file;
@@ -60,7 +57,11 @@ postsRouter.put('/post', uploadMiddleware.single('file'), async (req,res) => {
         newPath = path+'.'+ext
         fs.renameSync(path, newPath); 
     }
+    try{
     const {token}  = req.cookies;
+    if (!token) {
+      return res.status(401).json('Unauthorized');
+    }
     jwt.verify(token, secret, {}, async (err,info) => {
     if (err) throw err;
     const { id, title, summary, content } = req.body;
@@ -80,7 +81,9 @@ postsRouter.put('/post', uploadMiddleware.single('file'), async (req,res) => {
     }
     res.json(postDoc);
     })
+    } catch(err){
+      console.log(err)
     }
-);
+    };
 
-module.exports = postsRouter;
+module.exports = {uploadPost, getPosts, getPostById, updatePost};

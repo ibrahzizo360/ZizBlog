@@ -4,15 +4,12 @@ const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const cookieParser = require('cookie-parser');
 const salt = bcrypt.genSaltSync(10);
-const userRouter = express.Router();
-userRouter.use(cookieParser());
-
+const router = express.Router();
 const config = require('../config');
-
 const secret = config.jwtSecret;
 
 
-userRouter.post('/register', async (req,res) => {
+const register = async (req,res) => {
     const {username, password} = req.body;
     try{
         const UserDoc = await User.create({   
@@ -24,19 +21,18 @@ userRouter.post('/register', async (req,res) => {
     catch(e) {
         res.status(400).json(e)
     }
-});
+};
 
-userRouter.post('/login', async (req,res) => {
+const login = async (req,res) => {
     const {username,password} = req.body;
     const userDoc = await User.findOne({username});
     const passOk = bcrypt.compareSync(password, userDoc.password);
     if (passOk){
         jwt.sign({username, id : userDoc._id}, secret, {}, (err,token)=>{
             if (err) {
-                console.error(err);
                 res.status(500).json('error signing token');
             } else {
-                res.cookie('token',token).json({
+                res.cookie('token', token).json({
                     id:userDoc._id,
                     username,
                 });
@@ -46,9 +42,10 @@ userRouter.post('/login', async (req,res) => {
     else{
          res.status(400).json('wrong credentials');
     }
-});
+};
 
-userRouter.get('/profile', (req, res) => {
+const getProfile = (req, res) => {
+    try {
     const { token } = req.cookies;
   
     if (!token) {
@@ -59,14 +56,16 @@ userRouter.get('/profile', (req, res) => {
       if (err) {
         return res.status(401).json({ error: 'Invalid token' });
       }
-  
       res.json(info);
     });
-  });
+    } catch(err){
+        console.log(err)
+    }
+    
+  };
 
-userRouter.post('/logout',(req,res)=>{
+const logout = (req,res)=>{
     res.cookie('token', '').json('ok');
-});
+};
 
-
-module.exports = userRouter;
+module.exports = {logout, getProfile, register, login};
