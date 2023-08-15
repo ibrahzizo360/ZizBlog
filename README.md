@@ -1,6 +1,6 @@
 
 
-<h1 align="center" font-weight="bold">BlogWebApp</h1>
+<h1 align="center" font-weight="bold">ZizBlog</h1>
  <br>
 
 <p align="center"><a  href = "https://blog-frontend-ysjv.onrender.com" > LIVE DEMO HERE!<a/> </p>
@@ -21,7 +21,7 @@
 
 ## :dart: About ##
 
-Welcome to My Blog Web App, a platform that allows users to create, view, and edit blog posts. This web application provides a user-friendly interface and incorporates various features to enhance the blogging experience.
+Welcome to ZizBlog, a platform that allows users to create, view, and edit blog posts. This web application provides a user-friendly interface and incorporates various features to enhance the blogging experience.
 
 ## UI Desktop View
 ![ZizoBlog - Google Chrome 5_19_2023 6_07_15 PM](https://github.com/ibrahzizo360/BlogWebApp_MERN/assets/92813019/0b0ec69c-12be-43fd-87a4-a4f337039fb1)
